@@ -24,3 +24,15 @@ _crono () {
 	[[ $MIN = 09 ]] && MIN=9
 	echo -e "\n $URL ⏰ $HOUR:$MIN\n"
 }
+_sleep () {
+	if [[ $(date +%d) = 01 && $(date +%H) = 0[012345678] ]] ; then
+		cat msgs.txt
+		sleep 900
+	elif [[ $(date +%M) = [25][89] ]] ; then
+		cat msgs.txt
+		else
+		clear
+		cat msgs.txt
+		echo ' No battles now, waiting 5s' && sleep 5
+	fi
+}
