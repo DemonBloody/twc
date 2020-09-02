@@ -33,7 +33,5 @@ _play () {
 			_coliseum ;
 			_crono ;;
 		(*)
-			_sleep ;
-			_crono ;;
 	esac
 }
