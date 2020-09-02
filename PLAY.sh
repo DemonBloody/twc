@@ -1,7 +1,7 @@
 #!/bin/bash
 OP=""
 # /sources
-cd ~/twm
+cd ~/caverna
 . requeriments.sh ; . loginlogoff.sh
 . flagfight.sh ; . clanid.sh ; . crono.sh ; . arena.sh ; . coliseum.sh
 . campaign.sh ; . play.sh ; . altars.sh ; . clanfight.sh
