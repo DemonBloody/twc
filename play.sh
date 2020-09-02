@@ -1,12 +1,7 @@
 _play () {
 #_coliseum #for test
 	_all () {
-#		_AtakeHelp
-		_arenaj
-#		_AdeleteEnd
 		_cave
-		_trade
-		_money
 #		[[ $URL = 'furiadetitas.net' ]] && \
 #		_built
 	}
@@ -16,9 +11,6 @@ _play () {
 # /Ancient Altars 14:00:00 - 21:00:00
 		(13:59|20:59)
 			if [[ $(date +%H) = 13 ]] ; then
-#				_AtakeHelp
-				_fullmana
-#				_AdeleteEnd
 			fi
 			until [[ $(date +%M:%S) = 59:5* ]] ; do
 				echo 'Ancient Altars will be started...'
@@ -30,7 +22,7 @@ _play () {
 			_crono ;;
 		(0[02468]:[04]$L|0[13579]:2$L|1[048]:4$L|20:[04]$L|1[13579]:2$L|2[13]:2$L|1[28]:0$L)
 			_all ;
-			_crono ;;
+			_cave ;;
 		(*)
 	esac
 }
