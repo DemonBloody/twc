@@ -26,8 +26,7 @@ _crono () {
 }
 _sleep () {
 	if [[ $(date +%d) = 01 && $(date +%H) = 0[012345678] ]] ; then
-		_arena
-		_coliseum
+		_cave
 		reset
 		clear
 		cat msgs.txt
@@ -41,26 +40,26 @@ _sleep () {
 		reset
 		clear
 		cat msgs.txt
-		echo ' No battles now, waiting 1m' && sleep 1m
+		echo ' No battles now, waiting 1m' && sleep 5s
 	elif [[ $(date +%M) = [012345]6 ]] ; then
 		reset
 		clear
 		cat msgs.txt
-		echo ' No battles now, waiting 2m' && sleep 2m
+		echo ' No battles now, waiting 2m' && sleep 5s
 	elif [[ $(date +%M) = [012345]5 ]] ; then
 		reset
 		clear
 		cat msgs.txt
-		echo ' No battles now, waiting 3m' && sleep 3m
+		echo ' No battles now, waiting 3m' && sleep 5s
 	elif [[ $(date +%M) = [012345]4 ]] ; then
 		reset
 		clear
 		cat msgs.txt
-		echo ' No battles now, waiting 4m' && sleep 4m
+		echo ' No battles now, waiting 4m' && sleep 5s
 	else
 		reset
 		clear
 		cat msgs.txt
-		echo ' No battles now, waiting 30s' && sleep 29
+		echo ' No battles now, waiting 30s' && sleep 5s
 	fi
 }
