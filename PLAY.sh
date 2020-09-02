@@ -1,7 +1,7 @@
 #!/bin/bash
 OP=""
 # /sources
-cd ~/cv
+cd ~/cve
 . requeriments.sh ; . loginlogoff.sh ;
  . crono.sh ; . play.sh ; .
  cave.sh
