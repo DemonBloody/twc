@@ -1,10 +1,12 @@
 #!/bin/bash
 OP=""
 # /sources
-cd ~/cve
-. requeriments.sh ; . loginlogoff.sh ;
- . crono.sh ; . play.sh ; .
- cave.sh
+cd ~/twm
+. requeriments.sh ; . loginlogoff.sh
+. flagfight.sh ; . clanid.sh ; . crono.sh ; . arena.sh ; . coliseum.sh
+. campaign.sh ; . play.sh ; . altars.sh ; . clanfight.sh
+. clancoliseum.sh ; . king.sh ; . undying.sh ; . clandungeon.sh
+. trade.sh ; . career.sh ; . cave.sh
 # /functions
 _show () {
 		HP1=$(echo $SRC | sed "s/alt/\\n/g" | grep 'hp' | head -n1 | cut -d\< -f2 | cut -d\> -f2 | tr -cd '[[:digit:]]')
