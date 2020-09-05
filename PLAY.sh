@@ -30,7 +30,7 @@ _show () {
 		OUTGATE=$(echo $SRC | grep -o 'out_gate')
 		LEAVEFIGHT=$(echo $SRC | sed 's/href=/\n/g' | grep '/leaveFight/' | head -n1 | cut -d\' -f2)
 		WDRED=$(echo $SRC | sed "s/alt/\\n/g" | grep 'hp' | head -n1 | cut -d\' -f4) #white/dred
-		PRTCT=$(echo $SRC | grep -io '<b>ueliton</b>')
+#		PRTCT=$(echo $SRC | grep -io '<b>ueliton</b>')
 		HLHP=$(expr $FULL \* $HPER \/ 100)
 		_show
 	}
