@@ -6,19 +6,44 @@ _requeriments () {
 	echo -e "\n Upgrading..."
 	echo -e "👉 Please wait...☕👴"
 	_sync () {
-		curl https://raw.githubusercontent.com/DemonBloody/twc/master/cave.sh -O -L &> /dev/null ;
-		echo -e "\n Upgrading 1/5"
-		curl https://raw.githubusercontent.com/DemonBloody/twc/master/PLAY.sh -O -L &> /dev/null ;
-		echo -e "\n Upgrading 2/5"
-		curl https://raw.githubusercontent.com/DemonBloody/twc/master/cronos.sh -O -L &> /dev/null ;
-		echo -e "\n Upgrading 3/5"
-		curl https://raw.githubusercontent.com/DemonBloody/twc/master/loginlogoff.sh -O -L &> /dev/null ;
-		echo -e "\n Upgrading 4/5"
-		curl https://raw.githubusercontent.com/DemonBloody/twc/master/play.sh -O -L &> /dev/null ;
-		echo -e "\n Upgrading 5/6"
-		curl https://raw.githubusercontent.com/DemonBloody/twc/master/requeriments -O -L &> /dev/null ;
-		echo -e "\n Upgrading 6/6"
-		curl
+		https://raw.githubusercontent.com/DemonBloody/twc/raw/master/cave.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 1/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/PLAY.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 2/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/altars.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 3/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/arena.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 4/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/campaign.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 5/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/career.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 6/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/clancoliseum.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 7/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/clandungeon.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 8/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/clanfight.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 9/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/clanid.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 10/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/coliseum.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 11/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/crono.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 12/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/king.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 13/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/loginlogoff.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 14/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/play.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 15/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/requeriments.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 16/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/trade.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 17/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/undying.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 18/19"
+		curl https://raw.githubusercontent.com/DemonBloody/twc/raw/master/flagfight.sh -O -L &> /dev/null ;
+		echo -e "\n Upgrading 19/19"
 		dos2unix *.sh &> /dev/null
 	}
 # /termux on android
