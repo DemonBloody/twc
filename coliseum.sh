@@ -1,6 +1,7 @@
 _coliseum () {
 # /enterFight
 	SRC=$(w3m -debug $ENC $URL/settings/graphics/0 -o user_agent="$(shuf -n1 .ua)")
+# Porcentagem do hp para esmaltar
 	HPER='28'
 	RPER='5'
 	ITVL='2.94'
@@ -21,6 +22,7 @@ _coliseum () {
 		ACCESS=$(echo $SRC | sed 's/href=/\n/g' | grep '/coliseum/' | head -n1 | awk -F\' '{ print $2 }')
 		EXIT=$(echo $SRC | grep -o '/leaveFight/' | head -n1)
 	done
+# Captura o hp no inicio da batalha
 	FULL=$(echo $SRC | sed "s/alt/\\n/g" | grep 'hp' | head -n1 | awk -F\< '{ print $2 }' | awk -F\> '{ print $2 }' | tr -cd '[[:digit:]]')
 	_access
 	HP3=$HP1
