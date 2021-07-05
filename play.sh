@@ -1,5 +1,5 @@
 _play () {
-#_coliseum #for test
+_coliseum #for test
 	_all () {
 		_cave
 #		[[ $URL = 'furiadetitas.net' ]] && \
